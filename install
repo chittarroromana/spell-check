@@ -10,7 +10,7 @@
 # Move spell-check to /etc
 cd /etc
 mkdir spell-check
-mv ~/Downloads/spell-check/* /etc/spell-check
+mv /tmp/spell-check/* /etc/spell-check
 cd /etc/spell-check
 
 # Add permanent aliases for scripts
@@ -18,7 +18,7 @@ cat aliases.txt >> ~/.bash_aliases
 . ~/.bashrc
 
 # Clean downloaded folders
-rm -rf ~/Downloads/spell-check
+rm -rf /tmp/spell-check
 
 # Compile C source code
 cd src
